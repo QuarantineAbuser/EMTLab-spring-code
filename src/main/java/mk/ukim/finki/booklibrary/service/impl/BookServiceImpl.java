@@ -93,4 +93,9 @@ public class BookServiceImpl implements BookService {
     public void deleteById(Long id) {
         bookRepository.deleteById(id);
     }
+
+    @Override
+    public List<Category> findAllCategories() {
+        return List.of(Category.values());
+    }
 }

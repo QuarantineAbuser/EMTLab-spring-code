@@ -22,4 +22,6 @@ public interface BookService {
     Optional<Book> edit(Long id, BookDto bookDto);
 
     void deleteById(Long id);
+
+    List<Category> findAllCategories();
 }

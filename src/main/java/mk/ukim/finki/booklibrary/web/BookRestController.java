@@ -2,6 +2,7 @@ package mk.ukim.finki.booklibrary.web;
 
 import mk.ukim.finki.booklibrary.model.Book;
 import mk.ukim.finki.booklibrary.model.dto.BookDto;
+import mk.ukim.finki.booklibrary.model.enumerations.Category;
 import mk.ukim.finki.booklibrary.service.BookService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -22,6 +23,11 @@ public class BookRestController {
     @GetMapping
     private List<Book> findAll(){
         return bookService.findAll();
+    }
+
+    @GetMapping("/categories")
+    private List<Category> findAllCategories(){
+        return bookService.findAllCategories();
     }
 
     @GetMapping("/{id}")
