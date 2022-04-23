@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://library-react-195091.herokuapp.com")
 @RequestMapping("/api/countries")
 public class CountryRestController {
 
