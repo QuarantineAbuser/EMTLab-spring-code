@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "https://library-spring-195091.herokuapp.com")
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/api/books")
 public class BookRestController {
 
